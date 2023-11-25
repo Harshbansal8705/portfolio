@@ -10,13 +10,6 @@ export default function Hero() {
                 <p>
                 I'm a full stack web developer with a passion for machine learning, constantly seeking innovative solutions to bridge the digital world and artificial intelligence.
                 </p>
-                <div className="field">
-                    <label>
-                        <input type="text" placeholder="Email Address" />
-                            <button>Subscribe</button>
-                    </label>
-                </div>
-                <p>&#127881;Join my newsletter to get free strategies.</p>
             </div>
             <div className="person">
                 <div className="__BG">

@@ -84,7 +84,7 @@ nav {
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 830px) {
   body {
     margin: 0;
   }
@@ -144,7 +144,7 @@ nav {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
 
   .nav {
     z-index: 100;
@@ -222,7 +222,6 @@ nav {
 
 .hero div.text {
   margin-right: 3rem;
-  text-align: justify;
 }
 
 .text h1 {
@@ -303,6 +302,11 @@ section {
   transform: translateY(10vh);
 }
 
+.invisible-fade-left {
+  opacity: 0;
+  transform: translateX(30vw);
+}
+
 .projects-grid:nth-child(0) {
   background-color: red !important;
 }
@@ -323,6 +327,26 @@ span.semicolon-1 {
 
 section.projects div.project div.content {
   margin: 0 0.8rem 0.8rem 0.8rem;
+}
+
+section.about div.about-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section.about div.about-content img {
+  width: 30vw;
+}
+
+section.about div.about-content > * {
+  margin: 1rem;
+}
+
+section.about div.about-content p {
+  padding: 1rem;
+  line-height: 1.7;
+  text-align: justify;
 }
 
 section h1 {
@@ -688,11 +712,23 @@ section.contact a.emailid:hover {
   section.skills div.skills-row h3 {
     font-size: 1rem;
   }
+
+  section.about div.about-content p {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 994px) {
   div.skills-row h3 {
     width: 20%;
+  }
+
+  section.about div.about-content {
+    flex-direction: column;
+  }
+
+  section.about div.about-content img {
+    width: 80%;
   }
 }
 
