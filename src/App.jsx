@@ -36,7 +36,7 @@ function App() {
               elem.style.transition = "transform 0.5s ease, opacity 0.5s linear"
               elem.style.transform = "translateY(0)"
               elem.style.opacity = 1
-            }, 200*i)
+            }, 200 * i)
           })
         }
       }
@@ -54,6 +54,18 @@ function App() {
         }
       }
     })
+
+    const aboutContent = document.querySelector("section.about div.about-content p")
+    if (getComputedStyle(aboutContent).opacity === "0") {
+      aboutContent.style.transition = "transform 0.5s ease, opacity 0.5s linear"
+      console.log(aboutContent)
+      let y = aboutContent.getBoundingClientRect().y
+      let windowHeight = window.innerHeight
+      let position = y / windowHeight
+      if (position <= 0.8) {
+        aboutContent.classList.remove("invisible-fade-left")
+      }
+    }
   }
   React.useEffect(() => {
     scrolled();
