@@ -1,0 +1,27 @@
+import React from 'react'
+
+export default function Hero() {
+    return (
+        <section className="hero">
+            <div className="text">
+                <h1>
+                    Hi there, <br /> I'm a <span>Web Developer</span> <br />
+                </h1>
+                <p>
+                I'm a full stack web developer with a passion for machine learning, constantly seeking innovative solutions to bridge the digital world and artificial intelligence.
+                </p>
+                <div className="field">
+                    <label>
+                        <input type="text" placeholder="Email Address" />
+                            <button>Subscribe</button>
+                    </label>
+                </div>
+                <p>&#127881;Join my newsletter to get free strategies.</p>
+            </div>
+            <div className="person">
+                <div className="__BG">
+                </div>
+            </div>
+        </section>
+    )
+}
