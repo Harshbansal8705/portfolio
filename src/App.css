@@ -44,6 +44,7 @@ html,
 body {
   width: 100vw !important;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -356,7 +357,7 @@ section h1 {
 
 div.projects-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 25% 25% 25% 25%;
   row-gap: 1.5rem;
   justify-content: center;
   justify-items: center;
@@ -370,10 +371,18 @@ div.project {
   background-color: var(--card-bg);
   color: var(--main-color);
   box-shadow: var(--card-shadow);
+  height: --webkit-fill-available;
+  height: --moz-available;
+  height: stretch;
 }
 
 div.project h2 {
+  margin: 0.3rem 0;
   font-weight: 600;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 div.project div.image,
@@ -391,7 +400,7 @@ div.project div.image {
 div.project div.image div.hover-content {
   position: absolute;
   transform: translateY(100%);
-  background-color: #fff3;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 0.5rem;
   padding-bottom: 0;
   text-align: justify;
@@ -401,6 +410,7 @@ div.project div.image div.hover-content {
   justify-content: center;
   flex-direction: column;
   transition: transform ease 0.3s;
+  width: 100%;
 }
 
 div.project div.image div.hover-content p {
@@ -413,6 +423,15 @@ div.project div.image div.hover-content p {
 
 div.project div.image div.hover-content p::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 680px) {
+  div.project h2 {
+    font-size: 1rem;
+  }
+  div.project div.image div.hover-content {
+    font-size: 0.8rem;
+  }
 }
 
 div.project div.image div.hover-content a {
@@ -648,13 +667,13 @@ section.contact a.emailid:hover {
 
 @media screen and (max-width: 1000px) {
   div.projects-grid {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 33% 33%;
   }
 }
 
 @media screen and (max-width: 630px) {
   div.projects-grid {
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
   }
 
   div.tags {
@@ -761,5 +780,9 @@ section.contact a.emailid:hover {
     margin-bottom: 0.5rem;
     width: max-content;
     
+  }
+
+  div.project h2 {
+    font-size: 1rem;
   }
 }

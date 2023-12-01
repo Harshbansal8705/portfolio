@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Hero() {
     return (
-        <section className="hero">
+        <section className="hero" id="home">
             <div className="text">
                 <h1>
                     Hi there, <br /> I'm a <span>Web Developer</span> <br />

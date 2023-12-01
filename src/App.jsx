@@ -78,13 +78,20 @@ function App() {
     /*==================== SHOW MENU ====================*/
     const showMenu = (toggleId, navId) => {
       const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
+      nav = document.getElementById(navId);
+      document.body.addEventListener("click", () => {
+        nav.classList.remove("show-menu")
+      })
 
       // Validate that variables exist
       if (toggle && nav) {
-        toggle.addEventListener('click', () => {
+        toggle.addEventListener('click', (e) => {
+          e.stopPropagation()
           // We add the show-menu class to the div tag with the nav__menu class
           nav.classList.toggle('show-menu')
+        })
+        nav.addEventListener("click", (e) => {
+          e.stopPropagation()
         })
       }
     }
