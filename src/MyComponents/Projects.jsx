@@ -1,6 +1,6 @@
 import React from 'react'
 import Project from './Project'
-import VirtualPaint from "../static/images/WindowIcon2.png"
+import VirtualPaint from "../static/images/VirtualPaint.png"
 import Pypi from "../static/images/pypi.jpeg"
 
 export default function Projects() {
