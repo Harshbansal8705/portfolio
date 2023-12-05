@@ -295,7 +295,7 @@ section {
   color: var(--main-color);
 }
 
-.invisible-fade-up {
+.invisible-fade-up, .invisible-slide-up {
   opacity: 0;
   transform: translateY(10vh);
 }

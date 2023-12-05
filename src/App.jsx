@@ -55,17 +55,32 @@ function App() {
       }
     })
 
+    const about = document.querySelector("section.about h1")
     const aboutContent = document.querySelector("section.about div.about-content p")
     if (getComputedStyle(aboutContent).opacity === "0") {
       aboutContent.style.transition = "transform 0.5s ease, opacity 0.5s linear"
+      aboutContent.style.transitionDelay = "0.2s"
       console.log(aboutContent)
-      let y = aboutContent.getBoundingClientRect().y
+      let y = about.getBoundingClientRect().y
       let windowHeight = window.innerHeight
       let position = y / windowHeight
       if (position <= 0.8) {
         aboutContent.classList.remove("invisible-fade-left")
       }
     }
+    const aboutImage = document.querySelector("section.about div.about-content img")
+    if (getComputedStyle(aboutContent).opacity === "0") {
+      aboutImage.style.transition = "transform 0.5s ease, opacity 0.5s linear"
+      aboutImage.style.transitionDelay = "0.2s"
+      console.log(aboutContent)
+      let y = about.getBoundingClientRect().y
+      let windowHeight = window.innerHeight
+      let position = y / windowHeight
+      if (position <= 0.8) {
+        aboutImage.classList.remove("invisible-slide-up")
+      }
+    }
+
   }
   React.useEffect(() => {
     scrolled();
@@ -77,7 +92,7 @@ function App() {
     /*==================== SHOW MENU ====================*/
     const showMenu = (toggleId, navId) => {
       const toggle = document.getElementById(toggleId),
-      nav = document.getElementById(navId);
+        nav = document.getElementById(navId);
       document.body.addEventListener("click", () => {
         nav.classList.remove("show-menu")
       })
