@@ -2,6 +2,7 @@ import React from 'react'
 import Project from './Project'
 import VirtualPaint from "../static/images/VirtualPaint.png"
 import Pypi from "../static/images/pypi.jpeg"
+import DigitRecognizer from "../static/images/DigitRecognizer.png"
 
 export default function Projects() {
     return (
@@ -13,14 +14,28 @@ export default function Projects() {
                     title="Virtual Paint App"
                     tags={["Python", "Computer Vision", "OpenCV", "Mediapipe"]}
                     description="Using your webcam, the Virtual Paint App allows you to paint using your fingers."
-                    link="https://github.com/Harshbansal8705/Virtual-Paint-App-2"
+                    links={{
+                        "github": "https://github.com/Harshbansal8705/Virtual-Paint-App-2"
+                    }}
                 />
                 <Project
                     image={Pypi}
                     title="Hand Tracking Module"
                     tags={["Python", "OpenCV", "pip", "Mediapipe"]}
                     description="This is a pip package to simplify the use of mediapipe library to detect hands using simple functions."
-                    link="https://github.com/Harshbansal8705/HandTrackingModule"
+                    links={{
+                        "github": "https://github.com/Harshbansal8705/HandTrackingModule"
+                    }}
+                />
+                <Project
+                    image={DigitRecognizer}
+                    title="Digit Recognizer"
+                    tags={["Machine Learning", "Python", "Scikit Learn", "Data Science"]}
+                    description="Leveraging XGBoost algorithm, I constructed a digit recognition model that attained an impressive 98% accuracy on the MNIST dataset."
+                    links={{
+                        "github": "https://github.com/Harshbansal8705/Digit-Recognize",
+                        "kaggle": "https://www.kaggle.com/harshbansalcoder/digit-recognizer"
+                    }}
                 />
             </div>
         </section>

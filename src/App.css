@@ -15,6 +15,9 @@
   --tag-bg: white;
   --skills-row-bg: #e3e4e8;
   --skill-tag-bg: #ffffffaf;
+  --paragraph-color: #444;
+  --project-link-color: #2e038c;
+  --project-link-hover: white;
 }
 
 body.dark-theme {
@@ -30,6 +33,9 @@ body.dark-theme {
   --tag-bg: grey;
   --skills-row-bg: #131313;
   --skill-tag-bg: #1C1C1C;
+  --paragraph-color: #777;
+  --project-link-color: #00beff;
+  --project-link-hover: black;
 }
 
 * {
@@ -238,7 +244,7 @@ span {
 }
 
 .text p, p.about {
-  color: #787878;
+  color: var(--paragraph-color);
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -274,7 +280,7 @@ button {
   padding-left: 70px;
   width: 390px;
   height: 420px;
-  background-image: url(./static/images/profile.jpg);
+  background-image: url(./static/images/profile-photo.jpg);
   background-size: cover;
   background-position: right;
   overflow: hidden;
@@ -328,6 +334,36 @@ span.semicolon-1 {
 
 section.projects div.project div.content {
   margin: 0 0.8rem 0.8rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+section.projects div.project div.content div.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+section.projects div.project div.content div.links a {
+  padding: 0.2rem 0.2rem;
+  border: 2px solid var(--project-link-color);
+  color: var(--project-link-color);
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  transition: color 0.1s ease, background-color 0.1s ease;
+  width: 100%;
+  text-align: center;
+  margin: 0.2rem;
+  white-space: nowrap;
+}
+
+section.projects div.project div.content div.links a:hover {
+  background-color: var(--project-link-color);
+  color: var(--project-link-hover);
 }
 
 section.about div.about-content {
@@ -371,9 +407,12 @@ div.project {
   background-color: var(--card-bg);
   color: var(--main-color);
   box-shadow: var(--card-shadow);
-  height: --webkit-fill-available;
+  height: stretch; 
   height: --moz-available;
-  height: stretch;
+  height: 100%;
+  height: --webkit-fill-available;
+  display: flex;
+  flex-direction: column;
 }
 
 div.project h2 {
@@ -400,7 +439,7 @@ div.project div.image {
 div.project div.image div.hover-content {
   position: absolute;
   transform: translateY(100%);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 0.5rem;
   padding-bottom: 0;
   text-align: justify;
@@ -414,6 +453,7 @@ div.project div.image div.hover-content {
 }
 
 div.project div.image div.hover-content p {
+  flex-grow: 1;
   height: 80%;
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -432,17 +472,6 @@ div.project div.image div.hover-content p::-webkit-scrollbar {
   div.project div.image div.hover-content {
     font-size: 0.8rem;
   }
-}
-
-div.project div.image div.hover-content a {
-  border: 1px solid black;
-  color: black;
-  margin: 2%;
-  padding: 0 3px;
-}
-
-div.project div.image div.hover-content a:hover {
-  background-color: rgba(255, 255, 255, 0.2)
 }
 
 div.project div.image:hover>div.hover-content {
@@ -485,6 +514,7 @@ span.skill {
   padding: 0px 5px;
   margin: 3px;
   background-color: var(--skill-tag-bg);
+  font-weight: 500;
 }
 
 div.skills-row h3 {
@@ -784,5 +814,16 @@ section.contact a.emailid:hover {
 
   div.project h2 {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  section.projects div.project div.content div.links {
+    flex-direction: column;
+  }
+
+  section.projects div.project div.content div.links a {
+    width: 100%;
+    text-align: center;
   }
 }

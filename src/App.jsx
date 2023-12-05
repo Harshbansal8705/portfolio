@@ -70,7 +70,6 @@ function App() {
   React.useEffect(() => {
     scrolled();
     document.addEventListener("scroll", scrolled)
-    console.log("Hey")
 
     return () => document.removeEventListener("scroll", scrolled)
   })
@@ -93,6 +92,8 @@ function App() {
         nav.addEventListener("click", (e) => {
           e.stopPropagation()
         })
+        nav.querySelectorAll("li").forEach(elem => elem.addEventListener("click", () => nav.classList.remove("show-menu")))
+        nav.querySelector("div.__dark-mode").addEventListener("click", () => nav.classList.remove("show-menu"))
       }
     }
 
