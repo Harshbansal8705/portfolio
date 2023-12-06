@@ -10,10 +10,10 @@ export default function Contact() {
             <div className="social">
                 <span>Find me on:</span>
                 <span className="social-icons">
-                    <a target='_blank' rel="noreferrer" href="https://github.com/harshbansal8705" className='icon-parent firacode'><span className="icon github"><i className='bx bxl-github'></i></span><span>/harshbansal8705</span></a>
-                    <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/harshbansal8705" className='icon-parent firacode'><span className="icon linkedin"><i className='bx bxl-linkedin'></i></span><span>/in/harshbansal8705</span></a>
-                    <a target='_blank' rel="noreferrer" href="https://www.facebook.com/harsh8705" className='icon-parent firacode'><span className="icon facebook"><i className='bx bxl-facebook'></i></span><span>/harsh8705</span></a>
-                    <a target='_blank' rel="noreferrer" href="https://www.instagram.com/harshbansal8705" className='icon-parent firacode'><span className="icon instagram"><i className='bx bxl-instagram'></i></span><span>/harshbansal8705</span></a>
+                    <a target='_blank' rel="noreferrer" href="https://github.com/harshbansal8705" className='icon-parent firacode'><span className="icon github"><i className='bx bxl-github'></i></span><span className='social-username'>/harshbansal8705</span></a>
+                    <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/harshbansal8705" className='icon-parent firacode'><span className="icon linkedin"><i className='bx bxl-linkedin'></i></span><span className='social-username'>/in/harshbansal8705</span></a>
+                    <a target='_blank' rel="noreferrer" href="https://www.facebook.com/harsh8705" className='icon-parent firacode'><span className="icon facebook"><i className='bx bxl-facebook'></i></span><span className='social-username'>/harsh8705</span></a>
+                    <a target='_blank' rel="noreferrer" href="https://www.instagram.com/harshbansal8705" className='icon-parent firacode'><span className="icon instagram"><i className='bx bxl-instagram'></i></span><span className='social-username'>/harshbansal8705</span></a>
                 </span>
             </div>
         </section>
