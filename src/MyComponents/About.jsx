@@ -8,7 +8,7 @@ export default function About() {
       <div className="about-content">
         <img src={Image} alt="" className="invisible-slide-up" />
         <p className="about invisible-fade-left">
-          An engineering student at IIT Kharagpur, I'm currently pursuing a bachelor's degree while wearing multiple hats as a full stack web developer, a machine learning enthusiast, and a passionate advocate for startups and entrepreneurship. I'm dedicated to bridging the gap between technology and innovation, crafting the digital future with a blend of web development and AI, and nurturing a strong interest in the world of startups.
+          Forget the textbooks, I'm more interested in coding, the next big thing. I'm juggling building web apps that would make Spiderman jealous and exploring the world of Machine Learning and AI. I believe that the future belongs to the innovators, the ones who aren't afraid to break the rules and build something truly remarkable.<br />  So, join me on this journey through the digital landscape, where the only limit is our imagination (and maybe the occasional server meltdown, Oops...).
         </p>
       </div>
     </section>

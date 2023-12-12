@@ -8,7 +8,7 @@ export default function Hero() {
                     Hi there, <br /> I'm a <span>Web Developer</span> <br />
                 </h2>
                 <p>
-                I'm Harsh Bansal, a full stack web developer with a passion for machine learning, constantly seeking innovative solutions to bridge the digital world and artificial intelligence.
+                I'm Harsh Bansal, an IIT Kharagpur student juggling code with web development and machine learning, and a healthy dose of startup enthusiasm (with a side of self-inflicted chaos).
                 </p>
             </div>
             <div className="person">
