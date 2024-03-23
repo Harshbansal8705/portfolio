@@ -479,6 +479,11 @@ div.project div.image div.hover-content p::-webkit-scrollbar {
   display: none;
 }
 
+div.project h2 {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
 @media screen and (max-width: 680px) {
   div.project h2 {
     font-size: 1rem;
