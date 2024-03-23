@@ -14,10 +14,10 @@ export default function Projects() {
                     image={ECommerce}
                     title="E-Commerce Website"
                     tags={["Reactjs", "Nodejs", "Expressjs", "MongoDB", "Redux"]}
-                    description="This is a comprehensive E-Commerce website created with MERN Stack, integrating user authentication, advanced cart and product management, optimizing the product list with brand and category filters."
+                    description="This is a comprehensive E-Commerce website created with MERN Stack, integrating user authentication, cart and product management, optimizing the product list with brand and category filters."
                     links={{
-                        "github": "https://github.com/Harshbansal8705/Digit-Recognize",
-                        "visit": "https://ecommerce-steel-eight.vercel.app/"
+                        "visit": "https://ecommerce-steel-eight.vercel.app/",
+                        "github": "https://github.com/Harshbansal8705/ECommerce-Website"
                     }}
                 />
                 <Project
