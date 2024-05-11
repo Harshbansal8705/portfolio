@@ -8,7 +8,7 @@ import ECommerce from "../static/images/ECommerce.jpg"
 export default function Projects() {
     return (
         <section className="projects" id="projects">
-            <h1 className='invisible-fade-up'>Projects</h1>
+            <h2 className='invisible-fade-up'>Projects</h2>
             <div className="projects-grid grid-invisible-fade-up">
                 <Project
                     image={ECommerce}

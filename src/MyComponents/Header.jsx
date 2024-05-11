@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <header className="l-header" id="header">
             <nav className="nav bd-container">
-                <a href="#" className="nav__logo firacode">{"<Harsh Bansal/>"}</a>
+                <a href="#" className="nav__logo firacode"><span>&lt;</span><h1>Harsh Bansal</h1><span>/&gt;</span></a>
 
                 <div className="nav__menu" id="nav-menu">
                     <ul className="nav__list">

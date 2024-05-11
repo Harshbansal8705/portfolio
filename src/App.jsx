@@ -55,7 +55,7 @@ function App() {
       }
     })
 
-    const about = document.querySelector("section.about h1")
+    const about = document.querySelector("section.about h2")
     const aboutContent = document.querySelector("section.about div.about-content p")
     if (getComputedStyle(aboutContent).opacity === "0") {
       aboutContent.style.transition = "transform 0.5s ease, opacity 0.5s linear"

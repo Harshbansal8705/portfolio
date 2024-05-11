@@ -13,7 +13,7 @@ export default function Project(props) {
             </div>
             <div className="content">
                 <div className="up">
-                    <h2 className="project-name" title={props.title}>{props.title}</h2>
+                    <h3 className="project-name" title={props.title}>{props.title}</h3>
                     <div className="tags">
                         {tags}
                     </div>

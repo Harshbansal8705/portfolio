@@ -3,7 +3,7 @@ import React from 'react'
 export default function Contact() {
     return (
         <section className="contact" id="contact">
-            <h1>Contact Me</h1>
+            <h2>Contact Me</h2>
             <div className="email">
                 <span>Email me at:</span><a href="mailto:harshbansal8705@gmail.com" className="emailid"> <span className="icon email"><i className='bx bx-envelope'></i></span><span>harshbansal8705@gmail.com</span></a>
             </div>
