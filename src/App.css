@@ -331,6 +331,7 @@ section {
 
 span.semicolon {
   color: var(--main-color);
+  margin-right: 0.2rem;
 }
 
 span.semicolon-1 {
@@ -544,7 +545,7 @@ span.skill {
 }
 
 div.skills-row h3 {
-  width: 30%;
+  width: 15%;
 }
 
 section.contact {
@@ -820,7 +821,7 @@ section.contact a.emailid:hover {
   }
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 956px) {
   span.semicolon-1 {
     display: inline;
   }

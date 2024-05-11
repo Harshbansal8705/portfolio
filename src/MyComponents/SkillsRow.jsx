@@ -8,7 +8,8 @@ export default function SkillsRow({ type, skills, color }) {
     return (
         <div className="skills-row slide-r-in">
             <h3>{type}<span className='semicolon semicolon-1'>:</span></h3>
-            <div className="skills"><span className='semicolon semicolon-2'>:</span> {tags}</div>
+            <span className='semicolon semicolon-2'>:</span>
+            <div className="skills"><span className='semicolon semicolon-2'></span>{tags}</div>
         </div>
     )
 }

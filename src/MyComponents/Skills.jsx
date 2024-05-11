@@ -5,11 +5,11 @@ export default function Skills() {
   return (
     <section className="skills" id="skills">
         <h2>Skills</h2>
-        <SkillsRow type={"Languages"} skills={["Python", "C", "C++", "HTML", "CSS", "JavaScript"]} />
-        <SkillsRow type={"Frameworks"} skills={["Numpy", "Pandas", "Django", "Flask", "OpenCV", "ReactJs", "NodeJs", "NextJs"]} />
-        <SkillsRow type={"Machine Learning"} skills={["Scikit Learn", "Algorithms"]} />
-        <SkillsRow type={"Tools"} skills={["Git", "Github", "MongoDB"]} />
+        <SkillsRow type={"Languages"} skills={["Python", "C", "C++", "JavaScript", "TypeScript"]} />
+        <SkillsRow type={"Frameworks"} skills={[ "ReactJs", "NodeJs", "NextJs", "Django", "Flask", "OpenCV", "Numpy", "Pandas", "Sklearn", "Tensorflow"]} />
+        <SkillsRow type={"Tools"} skills={["Git", "Github", "MongoDB", "Docker"]} />
         <SkillsRow type={"Soft Skills"} skills={["Leadership", "Event Management", "Speaking", "Time Management"]} />
+        <SkillsRow type={"Others"} skills={["Redux", "Web Socket"]} />
     </section>
   )
 }
