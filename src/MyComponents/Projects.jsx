@@ -4,6 +4,7 @@ import VirtualPaint from "../static/images/VirtualPaint.png"
 import Pypi from "../static/images/pypi.jpeg"
 import DigitRecognizer from "../static/images/DigitRecognizer.png"
 import ECommerce from "../static/images/ECommerce.jpg"
+import Canvas from "../static/images/Canvas.png"
 
 export default function Projects() {
     return (
@@ -11,9 +12,19 @@ export default function Projects() {
             <h2 className='invisible-fade-up'>Projects</h2>
             <div className="projects-grid grid-invisible-fade-up">
                 <Project
+                    image={Canvas}
+                    title="Canvas - Whiteboard Collaboration App"
+                    tags={["Next.js", "WebSocket", "TypeScript", "TailwindCSS"]}
+                    description="Canvas is a real-time whiteboard app built with Next.js, WebSockets, TypeScript, and Tailwind CSS. It allows multiple users to securely log in, draw, erase, change colors, and interact on a shared canvas simultaneously."
+                    links={{
+                        "visit": "https://canvas-beryl.vercel.app/",
+                        "github": "https://github.com/Harshbansal8705/canvas",
+                    }}
+                />
+                <Project
                     image={ECommerce}
                     title="E-Commerce Website"
-                    tags={["Reactjs", "Nodejs", "Expressjs", "MongoDB", "Redux"]}
+                    tags={["React", "Node.js", "Express.js", "MongoDB", "Redux"]}
                     description="This is a comprehensive E-Commerce website created with MERN Stack, integrating user authentication, cart and product management, optimizing the product list with brand and category filters."
                     links={{
                         "visit": "https://ecommerce-steel-eight.vercel.app/",
@@ -41,7 +52,7 @@ export default function Projects() {
                 <Project
                     image={DigitRecognizer}
                     title="Digit Recognizer"
-                    tags={["Machine Learning", "Python", "Scikit Learn", "Data Science"]}
+                    tags={["Machine Learning", "Python", "Scikit-learn", "Data Science"]}
                     description="Leveraging XGBoost algorithm, I constructed a digit recognition model that attained an impressive 98% accuracy on the MNIST dataset."
                     links={{
                         "github": "https://github.com/Harshbansal8705/Digit-Recognizer",
