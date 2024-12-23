@@ -5,7 +5,7 @@ export default function Contact() {
         <section className="contact" id="contact">
             <h2>Contact Me</h2>
             <div className="email">
-                <span>Email me at:</span><a href="mailto:harshbansal8705@gmail.com" className="emailid"> <span className="icon email"><i className='bx bx-envelope'></i></span><span>harshbansal8705@gmail.com</span></a>
+                <span>Email me at:</span><a href="mailto:harsh@harshbansal.in" className="emailid"> <span className="icon email"><i className='bx bx-envelope'></i></span><span>harsh@harshbansal.in</span></a>
             </div>
             <div className="social">
                 <span>Find me on:</span>
