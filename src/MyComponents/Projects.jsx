@@ -17,7 +17,7 @@ export default function Projects() {
                     tags={["Next.js", "WebSocket", "TypeScript", "TailwindCSS"]}
                     description="Canvas is a real-time whiteboard app built with Next.js, WebSockets, TypeScript, and Tailwind CSS. It allows multiple users to securely log in, draw, erase, change colors, and interact on a shared canvas simultaneously."
                     links={{
-                        "visit": "https://canvas-beryl.vercel.app/",
+                        "visit": "https://canvas.harshbansal.in/",
                         "github": "https://github.com/Harshbansal8705/canvas",
                     }}
                 />
